@@ -1,9 +1,9 @@
 "use strict";
 	let canvas, context, ball;
-	ball = {x : 10, y : 30, dx : 5, dy : 2}; // 位置の初期値と，インターバルごとの移動距離
+	ball = {x : 10, y : 10, dx : 5, dy : 2}; // 位置の初期値と，インターバルごとの移動距離
 	function drawBall() {
 		// 背景を描画
-		context.fillStyle = "#999999";
+		//context.fillStyle = "#999999";
 		context.fillRect(500, 0, 0, 0);
 		// ボールの移動
 		if (ball.x < 10 || ball.x > 490) {
@@ -29,8 +29,8 @@
 
 		// ボールを描画
 		context.fillStyle = "blue";
-		context.beginPath();
-		context.arc(ball.x, ball.y, 10, 0, Math.PI * 2, false);
+		//context.beginPath();
+		//context.arc(ball.x, ball.y, 10, 0, Math.PI * 2, false);
 		context.fill();
 
 		// アニメーション
