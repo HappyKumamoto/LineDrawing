@@ -3,20 +3,23 @@
 <head>
     <meta charset="utf-8" />
     <title>Gamedev Canvas Workshop - lesson 2: move the ball</title>
-    <style>* { padding: 20; margin: 20; } canvas { background: #999999; display: block; margin: 0 auto; }</style>
+    <style>
+        * { padding: 20; margin: 20; } 
+        canvas { background: #DDDDDD; display: block; margin: 0 auto; }
+    </style>
 </head>
 <body>
 
 <canvas id="canvas-a" width="800" height="500"></canvas>
 
 <script>
-   var canvas = document.getElementById("canvas-a");
-var ctx = canvas.getContext("2d");
-var ballRadius = 30;
-var x = canvas.width/2;
-var y = canvas.height-30;
-var dx = 2;
-var dy = -2;
+let canvas = document.getElementById("canvas-a");
+let ctx = canvas.getContext("2d");
+let ballRadius = 30;
+let x = canvas.width/2;
+let y = canvas.height-30;
+let dx = 2;
+let dy = -2;
 
 function drawBall() {
     ctx.beginPath();
